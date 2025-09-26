@@ -1,13 +1,12 @@
 import React from "react";
 import "./Home.css";
 
-
 export default function Home() {
     return (
         <>
-            <section className="hero">
+            <section id="hero" className="hero">
                 <div className="hero-content">
-                    <h1>IRYNA SHKUROPII</h1>
+                    <h1>II</h1>
                     <h3 className="subtitle">Classical <span>Pianist</span></h3>
                     <h3>and Tutor</h3>
                     <p className="hero-text">
@@ -17,7 +16,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="about">
+            <section id="about" className="about">
                 <div className="about-content">
                     <img src={'./src/assets/img-about.jpg'} />
                     <div className="about-text">
@@ -42,7 +41,7 @@ export default function Home() {
             </section>
 
 
-            <section className="contact">
+            <section id="contact" className="contact">
 
                 <h2>Contact Me</h2>
 
@@ -77,7 +76,7 @@ export default function Home() {
             </section>
 
 
-            <section className="blog">
+            <section id="blog" className="blog">
 
                 <div className="blog-content">
                     <div className="title">
@@ -89,7 +88,7 @@ export default function Home() {
                             <h5>Tips for Succesfull Learning</h5>
                             <div className="pra">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, consequatur quasi veritatis ipsam velit ut maiores beatae nulla nisi! Cumque, maiores?</p>
-                                <a href="#" className="btn">Read More</a>
+                                <a href="#WorkAtHome" className="btn">Read More</a>
                             </div>
                         </div>
 
