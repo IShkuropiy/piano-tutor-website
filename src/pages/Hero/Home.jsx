@@ -7,9 +7,8 @@ export default function Home() {
         <>
             <section id="hero" className="hero">
                 <div className="hero-content">
-                    <h1>II</h1>
-                    <h3 className="subtitle">Classical <span>Pianist</span></h3>
-                    <h3>and Tutor</h3>
+                    <h1 className="hero-title">Iryna Shkuropii</h1>
+                    <h3 className="hero-subtitle">Classical Pianist and Tutor</h3>
                     <p className="hero-text">
                         Personalized piano lessons for every age, every stage
                     </p>
@@ -21,14 +20,14 @@ export default function Home() {
                 <div className="about-content">
                     <img src={'./src/assets/img-about.jpg'} />
                     <div className="about-text">
-                        <h2> Classical Pianist and tutor </h2>
-                        <h5>My Expirience</h5>
+                        <h1 className="title"> Classical Pianist and tutor </h1>
+                        <h5 className="subtitle">My Expirience</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim animi nemo, eum iste
                             porro esse, similique pariatur eligendi consequatur voluptas delectus veniam alias harum. Nobis
                             voluptatum omnis dignissimos perferendis
                         </p>
 
-                        <h5>My Values</h5>
+                        <h5 className="subtitle">My Values</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim animi nemo, eum iste
                             porro esse, similique pariatur eligendi consequatur voluptas delectus veniam alias harum. Nobis
                             voluptatum omnis dignissimos perferendis
@@ -61,7 +60,7 @@ export default function Home() {
                         </div>
 
                         <div className="right">
-                            <h2 className="sub">Let's Connect</h2>
+                            <h2 className="contact-sub">Let's Connect</h2>
 
                             <form>
                                 <input type="text" class="field contact-field" placeholder="Enter Your Name" required />
