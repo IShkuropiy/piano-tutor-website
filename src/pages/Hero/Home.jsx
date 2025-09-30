@@ -2,13 +2,14 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
-
 export default function Home() {
     return (
-        <main>
-            <section className="hero">
+
+        <>
+            <section id="hero" className="hero">
+
                 <div className="hero-content">
-                    <h1>IRYNA SHKUROPII</h1>
+                    <h1>II</h1>
                     <h3 className="subtitle">Classical <span>Pianist</span></h3>
                     <h3>and Tutor</h3>
                     <p className="hero-text">
@@ -18,7 +19,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="about">
+            <section id="about" className="about">
                 <div className="about-content">
                     <img src={'./src/assets/img-about.jpg'} />
                     <div className="about-text">
@@ -43,7 +44,7 @@ export default function Home() {
             </section>
 
 
-            <section className="contact">
+            <section id="contact" className="contact">
 
                 <h2>Contact Me</h2>
 
@@ -90,6 +91,20 @@ export default function Home() {
                             </p>
                             <div className="card-meta">
                                 <a href="#read-1" className="card-link">Read more</a>
+
+            <section id="blog" className="blog">
+
+                <div className="blog-content">
+                    <div className="title">
+                        <h2 className="blog-heading">Work at Home</h2>
+                    </div>
+
+                    <div className="blog-box">
+                        <div className="card">
+                            <h5>Tips for Succesfull Learning</h5>
+                            <div className="pra">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, consequatur quasi veritatis ipsam velit ut maiores beatae nulla nisi! Cumque, maiores?</p>
+                                <a href="#WorkAtHome" className="btn">Read More</a>
                             </div>
                         </article>
 
@@ -183,8 +198,6 @@ export default function Home() {
                 </div>
             </section>
 
-
-
-        </main>
+        </>
     );
 }
