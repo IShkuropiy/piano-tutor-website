@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
+
         <>
             <section id="hero" className="hero">
+
                 <div className="hero-content">
                     <h1>II</h1>
                     <h3 className="subtitle">Classical <span>Pianist</span></h3>
@@ -76,6 +78,19 @@ export default function Home() {
                 </div>
             </section>
 
+            <section id="blog" className="blog">
+                <div className="container">
+                    <h2 className="section-title">Featured articles</h2>
+
+                    <div className="card-grid">
+                        <article className="card">
+                            <span className="eyebrow">Your Technique</span>
+                            <h3 className="card-title">Independent practice at home</h3>
+                            <p className="card-snippet">
+                                How to practice
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-1" className="card-link">Read more</a>
 
             <section id="blog" className="blog">
 
@@ -91,29 +106,97 @@ export default function Home() {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, consequatur quasi veritatis ipsam velit ut maiores beatae nulla nisi! Cumque, maiores?</p>
                                 <a href="#WorkAtHome" className="btn">Read More</a>
                             </div>
-                        </div>
+                        </article>
 
-                        <div className="card">
-                            <h5>How to help your kid</h5>
-                            <div className="pra">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cupiditate beatae? Facere aliquam sunt ipsam sed odio, neque vitae reiciendis facilis velit amet, sapiente dolore, sint nobis laboriosam! Eligendi, ipsa.</p>
-                                <a href="#" className="btn">Read More</a>
+                        <article className="card">
+                            <span className="eyebrow">Music Theory</span>
+                            <h3 className="card-title">The basic Music Theory</h3>
+                            <p className="card-snippet">
+                                Learning basic music theory is essential for enhancing creativity and developing musical awareness...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-2" className="card-link">Read more</a>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="card">
-                            <h5>Additional resources</h5>
-                            <div className="pra">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, dolorum numquam temporibus vero cum et. Facere magnam suscipit temporibus odit, repellat itaque odio. Eum asperiores blanditiis distinctio vel facilis laboriosam consequatur alias sint illo quos?\</p>
-                                <a href="#" className="btn">Read More</a>
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
                             </div>
-                        </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Your Technique</span>
+                            <h3 className="card-title">Independent practice at home</h3>
+                            <p className="card-snippet">
+                                How to practice
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-1" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Music Theory</span>
+                            <h3 className="card-title">The basic Music Theory</h3>
+                            <p className="card-snippet">
+                                Learning basic music theory is essential for enhancing creativity and developing musical awareness...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-2" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
+                        <article className="card">
+                            <span className="eyebrow">Your Technique</span>
+                            <h3 className="card-title">Independent practice at home</h3>
+                            <p className="card-snippet">
+                                How to practice
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-1" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Music Theory</span>
+                            <h3 className="card-title">The basic Music Theory</h3>
+                            <p className="card-snippet">
+                                Learning basic music theory is essential for enhancing creativity and developing musical awareness...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-2" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
-
             </section>
-
-
 
         </>
     );
