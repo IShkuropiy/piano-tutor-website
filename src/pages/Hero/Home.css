@@ -216,7 +216,7 @@ font-size: 24px;
   
   .contact-field:focus {
     border: 2px solid rgb(33, 31, 47);
-    background-color: whi#fffte;
+    background-color: #fff;
   }
   
   .contact-title {
