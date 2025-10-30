@@ -18,6 +18,191 @@ export default function Home() {
                 </div>
             </section>
 
+            <section id="about" className="about">
+                <div className="about-content">
+                    <img src={'./src/assets/img-about.jpg'} />
+                    <div className="about-text">
+                        <h1 className="title"> Classical Pianist and tutor </h1>
+                        <h5 className="subtitle">My Expirience</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim animi nemo, eum iste
+                            porro esse, similique pariatur eligendi consequatur voluptas delectus veniam alias harum. Nobis
+                            voluptatum omnis dignissimos perferendis
+                        </p>
+
+                        <h5 className="subtitle">My Values</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim animi nemo, eum iste
+                            porro esse, similique pariatur eligendi consequatur voluptas delectus veniam alias harum. Nobis
+                            voluptatum omnis dignissimos perferendis
+                            et blanditiis tempora eveniet nostrum obcaecati magni, modi deserunt, recusandae adipisci
+                            debitis quos ullam sit minus illum incidunt facilis unde!</p>
+                        <a href="#" className="btn">Ask me a Question</a>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section id="contact" className="contact">
+
+                <h2>Contact Me</h2>
+
+                <div className="contact-container">
+                    <div className="contact-box">
+                        <div className="left">
+
+                            <div className="contact-info">
+                                <p><i class="bi bi-telephone-fill"></i> +123-456-789</p>
+                                <p><i class="bi bi-envelope-fill"> </i> iraGmail.com</p>
+                                <p><i class="bi bi-geo-alt-fill"></i> Salem, OR</p>
+                            </div>
+                            <p className="contact-content">If you have any questions, please feel free to reach me out and
+                                I'll gladly answer them. </p>
+                            <p className="contact-content">Thanks for visiting!</p>
+                        </div>
+
+                        <div className="right">
+                            <h2 className="contact-sub">Let's Connect</h2>
+
+                            <form>
+                                <input type="text" class="field contact-field" placeholder="Enter Your Name" required />
+                                <input type="email" class="field contact-field" placeholder="Enter Your Email" required />
+                                <input type="text" class="field contact-field" placeholder="Enter Your Phone Number" />
+                                <textarea name="msg" placeholder="Your Message"
+                                    class="field contact-field contactTextarea" required></textarea>
+                                <button className="contact-btn" type='submit'>Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" className="blog">
+                <div className="container">
+                    <h2 className="section-title">Featured articles</h2>
+
+                    <div className="blog-box">
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Music Theory</span>
+                            <h3 className="card-title">The basic Music Theory</h3>
+                            <p className="card-snippet">
+                                Learning basic music theory is essential for enhancing creativity and developing musical awareness...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-2" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Your Technique</span>
+                            <h3 className="card-title">Independent practice at home</h3>
+                            <p className="card-snippet">
+                                How to practice
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-1" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Music Theory</span>
+                            <h3 className="card-title">The basic Music Theory</h3>
+                            <p className="card-snippet">
+                                Learning basic music theory is essential for enhancing creativity and developing musical awareness...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-2" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
+                        <article className="card">
+                            <span className="eyebrow">Your Technique</span>
+                            <h3 className="card-title">Independent practice at home</h3>
+                            <p className="card-snippet">
+                                How to practice
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-1" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Music Theory</span>
+                            <h3 className="card-title">The basic Music Theory</h3>
+                            <p className="card-snippet">
+                                Learning basic music theory is essential for enhancing creativity and developing musical awareness...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-2" className="card-link">Read more</a>
+                            </div>
+                        </article>
+
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
         </>
     );
 }
