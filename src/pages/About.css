@@ -1,0 +1,80 @@
+.about {
+    display: flex;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.about-img,
+.right-content {
+    flex-basis: 50%;
+}
+
+.about-img {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+
+.about-overlay{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: .95;
+}
+
+.overlay-headline{
+  font-size: 40px;
+  text-align: center;
+  margin: 25rem;
+  color: #fff;
+}
+
+/* RIGHT: content */
+.about-content{
+  background: #fafafa;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h5{
+  text-align: center;
+  color: #195cc8;
+  margin: 0 0 .5rem 0;
+  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
+}
+
+.about-content p{
+  margin: 0 0 1.5rem 0;
+  line-height: 1.7;
+  max-width: 550px;
+}
+
+/* Button */
+.btn{
+  align-self: flex-start;
+  border: 0;
+  padding: .85rem 1.25rem;
+  border-radius: 999px;
+  background: #195cc8;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .08s ease, filter .2s ease;
+}
+.btn:hover{ 
+  filter: brightness(.95);
+}
+.btn:active{
+   transform: translateY(1px); 
+  }

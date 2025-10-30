@@ -81,29 +81,15 @@ export default function Home() {
                 <div className="container">
                     <h2 className="section-title">Featured articles</h2>
 
-                    <div className="card-grid">
-                        <article className="card">
-                            <span className="eyebrow">Your Technique</span>
-                            <h3 className="card-title">Independent practice at home</h3>
-                            <p className="card-snippet">
-                                How to practice
-                            </p>
-                            <div className="card-meta">
-                                <a href="#read-1" className="card-link">Read more</a>
-
-            <section id="blog" className="blog">
-
-                <div className="blog-content">
-                    <div className="title">
-                        <h2 className="blog-heading">Work at Home</h2>
-                    </div>
-
                     <div className="blog-box">
-                        <div className="card">
-                            <h5>Tips for Succesfull Learning</h5>
-                            <div className="pra">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, consequatur quasi veritatis ipsam velit ut maiores beatae nulla nisi! Cumque, maiores?</p>
-                                <a href="#WorkAtHome" className="btn">Read More</a>
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
                             </div>
                         </article>
 
@@ -183,6 +169,26 @@ export default function Home() {
                             </div>
                         </article>
 
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
+                        <article className="card">
+                            <span className="eyebrow">Student's Tips</span>
+                            <h3 className="card-title">Motivation</h3>
+                            <p className="card-snippet">
+                                t’s not motivation that drives action, but action that drives motivation...
+                            </p>
+                            <div className="card-meta">
+                                <a href="#read-3" className="card-link">Read more</a>
+                            </div>
+                        </article>
                         <article className="card">
                             <span className="eyebrow">Student's Tips</span>
                             <h3 className="card-title">Motivation</h3>
