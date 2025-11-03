@@ -13,8 +13,7 @@ export default function Navbar() {
                     <NavLink to="/contact">Contact</NavLink>
                     <NavLink to="/blog">Blog</NavLink>
 
-                    <li><a href="#contact" className="btn-outline">Contact Me</a>
-                    </li>
+                    <li><NavLink to="/contact" className="btn-outline">Contact Me</NavLink></li>
                 </ul>
             </nav>
         </div>
