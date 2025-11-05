@@ -5,7 +5,6 @@
   backdrop-filter: saturate(160%) blur(6px);
 
 .navbar a { color: #fff; text-decoration: none; margin-left: 1.25rem; }
-*/
 
 .navbar {
   position: fixed;
@@ -26,29 +25,45 @@
   color: #fff;
   font-size: 1rem;
 }
+*/
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+.navbar {
+    font-family: "Inter", sans-serif;
+    color: #222;
+    background:transparent;
+ 
 }
 
-.nav-links a {
-  font-family: "Inter", sans-serif;
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.95rem;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    font-size: 14px;
+}
+
+.menu .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu .nav-links a {
+    color: #222;
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.menu .nav-links a.active {
+    color: #195cc8;
 }
 
 .menu .contact-info {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.nav-links .btn-outline {
-  border: 2px solid white;
-  padding: 0.4rem 0.9rem;
-  border-radius: 20px;
 }
 

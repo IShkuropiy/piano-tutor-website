@@ -6,7 +6,6 @@ export default function Navbar() {
     return (
         <div className="navbar">
             <nav className="menu">
-                <div className="logo">Iryna Shkuropii</div>
                 <ul className="nav-links">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/about">About</NavLink>
