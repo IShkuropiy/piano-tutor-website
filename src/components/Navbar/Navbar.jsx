@@ -12,9 +12,12 @@ export default function Navbar() {
                     <NavLink to="/about">About</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
                     <NavLink to="/blog">Blog</NavLink>
-
-                    <li><NavLink to="/contact" className="btn-outline">Contact Me</NavLink></li>
                 </ul>
+                                <div className="contact-info">
+                    <span> Monday - Friday 9:00AM - 7:00PM</span>
+                    <span> Call Me (123) 456-7890</span>
+                </div>
+                <li><NavLink to="/contact" className="btn-outline">Contact Me</NavLink></li>
             </nav>
         </div>
     );
