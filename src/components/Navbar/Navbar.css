@@ -40,6 +40,12 @@
   font-size: 0.95rem;
 }
 
+.menu .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .nav-links .btn-outline {
   border: 2px solid white;
   padding: 0.4rem 0.9rem;
