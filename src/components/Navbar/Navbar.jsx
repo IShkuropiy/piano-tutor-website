@@ -4,7 +4,6 @@ import "./Navbar.css";
 
 export default function Navbar() {
     return (
-        <div className="navbar">
             <nav className="menu">
                 <ul className="nav-links">
                     <NavLink to="/">Home</NavLink>
@@ -16,8 +15,7 @@ export default function Navbar() {
                     <span> Monday - Friday 9:00AM - 7:00PM</span>
                     <span> Call Me (123) 456-7890</span>
                 </div>
-                 <li><NavLink to="/contact" className="btn-outline">Contact Me</NavLink></li>
+                 <li><NavLink to="/contact" className="btn">Contact Me</NavLink></li>
             </nav>
-        </div>
     );
 }
