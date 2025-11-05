@@ -7,7 +7,7 @@
 .navbar a { color: #fff; text-decoration: none; margin-left: 1.25rem; }
 */
 
-.navbar-content {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -38,6 +38,12 @@
   text-decoration: none;
   color: #fff;
   font-size: 0.95rem;
+}
+
+.menu .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .nav-links .btn-outline {
