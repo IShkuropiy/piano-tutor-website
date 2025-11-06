@@ -4,27 +4,27 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    font-size: 14px;
     font-family: "Inter", sans-serif;
     color: #222;
-    background:transparent;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .menu .nav-links {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     gap: 20px;
 }
 
 .menu .nav-links a {
+    color: #222;
     text-decoration: none;
     padding: 5px 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.menu .nav-links a.active {
+.menu .ampm:hover, .tel:hover {
     color: #195cc8;
 }
 
@@ -32,5 +32,14 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.lesson-btn {
+    border: white solid 2px;
+    border-radius: 25px;
+    color: 222;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
