@@ -8,15 +8,14 @@ export default function Home() {
         <main>
             <section className="hero">
                 <div className="hero-content">
-                    <h1 className="title">Iryna Shkuropii</h1>
-                    <h3 className="subtitle">Classical Pianist and Tutor</h3>
+                    <h1 className="title">Individual Piano Lessons: Personalized Learning. Real Results.</h1>
                     <p className="text">
-                        Personalized piano lessons for every age, every stage
+                        Whether you're starting from scratch or looking to revisit the skills you mastered in music school, private piano lessons are the perfect place to begin (or continue!) your musical journey.
                     </p>
-                    <li><NavLink to="/blog">Blog</NavLink></li>
+                    <li><NavLink to="/about">Learn more</NavLink></li>
                 </div>
-                 <div className="image">
-                     <img src={hero}/>
+                <div className="image">
+                    <img src={hero} />
                 </div>
             </section>
         </main>
