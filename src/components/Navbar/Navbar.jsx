@@ -5,7 +5,7 @@ import "./Navbar.css";
 export default function Navbar() {
     return (
             <nav className="menu">
-                <ul className="nav-links">
+                 <ul className="nav-links">
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
                     <li><NavLink to="/pricing">Pricing</NavLink></li>
@@ -16,7 +16,7 @@ export default function Navbar() {
                     <span className="ampm"> Monday - Friday 9:00AM - 7:00PM</span>
                     <span className="tel"> Call Me (123) 456-7890</span>
                 </div>
-                 <li><NavLink to="/contact" className="lesson-btn">Book a lesson!</NavLink></li>
+                <button className="btn">Book a Lesson</button>
             </nav>
     );
 }
