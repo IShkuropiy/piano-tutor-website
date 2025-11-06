@@ -5,17 +5,18 @@ import "./Navbar.css";
 export default function Navbar() {
     return (
             <nav className="menu">
-                <ul className="nav-links">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/about">About</NavLink>
-                    <NavLink to="/contact">Contact</NavLink>
-                    <NavLink to="/blog">Blog</NavLink>
+                 <ul className="nav-links">
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/pricing">Pricing</NavLink></li>
+                    <li><NavLink to="/blog">Blog</NavLink></li>
+                    <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
                 <div className="contact-info">
-                    <span> Monday - Friday 9:00AM - 7:00PM</span>
-                    <span> Call Me (123) 456-7890</span>
+                    <span className="ampm"> Monday - Friday 9:00AM - 7:00PM</span>
+                    <span className="tel"> Call Me (123) 456-7890</span>
                 </div>
-                 <li><NavLink to="/contact" className="btn">Contact Me</NavLink></li>
+                <button className="btn">Book a Lesson</button>
             </nav>
     );
 }
