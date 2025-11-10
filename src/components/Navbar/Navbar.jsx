@@ -14,8 +14,8 @@ export default function Navbar() {
                     <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
                 <div className="contact-info">
-                    <span className="ampm"> Monday - Friday 9:00AM - 7:00PM</span>
-                    <span className="tel"> Call Me (123) 456-7890</span>
+                    <span> Monday - Friday 9:00AM - 7:00PM</span>
+                    <span> Call Me (123) 456-7890</span>
                 </div>
                 <button className="btn">Book a Lesson</button>
             </nav>
