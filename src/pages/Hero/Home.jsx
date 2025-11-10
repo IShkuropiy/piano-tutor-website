@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import hero from "/src/assets/hero.jpg";
-import "./Home.css";
+import "./Navbar.css";
 
 export default function Home() {
     return (
