@@ -1,80 +1,127 @@
 .about {
-    display: flex;
-    overflow: hidden;
-    background: #fafafa;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 5%;
+  background-color: #f3f0ed;
+  /*background: url("/src/assets/hero.jpg") no-repeat center center/cover;
+  #F3A26D
+  #41A67E;
+  #FCECDD
+  #EFECE3
+  #EBEBEB
+  #F9F3EF
+  #D2C1B6
+  #F9F8F6
+  #e7e5dc
+  #f3f0ed
+  */
+  gap: 2rem;
 }
 
-.about-img,
-.right-content {
-    flex-basis: 50%;
+/* --- Image column --- */
+.image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.about-img {
-    position: relative;
-    width: 50vw;
-    height: 100vh;
-    overflow: hidden;
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.about-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
-}
-
-.about-overlay{
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  opacity: .95;
-}
-
-.overlay-headline{
-  font-size: 40px;
-  text-align: center;
-  margin: 25rem;
-  color: #fff;
-}
-
-/* RIGHT: content */
-.about-content{
-  background: #fafafa;
-  padding: clamp(1.25rem, 4vw, 3rem);
-  display: flex;
+/* --- Text column --- */
+.about-content {
+ display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-left: 6vw;
+  gap: 0.5rem;
+  font-family: "Inter", sans-serif;
 }
 
-.about-content h5{
-  text-align: center;
+.about-content h3 {
   color: #195cc8;
-  margin: 0 0 .5rem 0;
-  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 6px;
 }
 
-.about-content p{
-  margin: 0 0 1.5rem 0;
-  line-height: 1.7;
-  max-width: 550px;
+.about-content h1 {
+  margin: 8px 0 14px;
+  line-height: 1.25;
 }
 
-/* Button */
-.btn{
-  align-self: flex-start;
-  border: 0;
-  padding: .85rem 1.25rem;
-  border-radius: 999px;
-  background: #195cc8;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform .08s ease, filter .2s ease;
+.a-card { 
+ display: flex;
+ flex-direction: column; /* Aligns icon and content horizontally */
+  align-items: flex-start; /* Aligns content to the top */
+  margin-bottom: 5px; /* Spacing between cards */
+/* Subtle shadow for depth */
 }
-.btn:hover{ 
-  filter: brightness(.95);
+
+.a-card h3 {
+  margin-top: 0; /* Remove default top margin from <h3> */
+  font-size: 18px;
+  font-weight: 600; /* Makes the title stand out */
+  color: #333; /* Darker text */
 }
-.btn:active{
-   transform: translateY(1px); 
+
+.a-card p {
+  margin-bottom: 0; /* Remove default bottom margin */
+  font-size: 15px;
+  color: #6c757d; /* Lighter text color to de-emphasize */
+  line-height: 1.6;
+}
+
+/* Reverse layout */
+.add--reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+.add--reverse .add-content {
+  order: 1;        /* Text on the left */
+  margin-left: 0;  /* reset overlap */
+  margin-right: clamp(-160px, -8vw, -40px);
+  background-color: #fff;/* overlap opposite direction */
+}
+
+.add--reverse h1 {
+  color: #333;
+}
+
+.add--reverse .add-image {
+  order: 2;        /* Image on the right */
+}
+
+/* For mobile: stack vertically again */
+@media (max-width: 900px) {
+  .add--reverse {
+    grid-template-columns: 1fr;
   }
+  .add--reverse .add-content {
+    order: 1;
+    margin-right: 0;
+  }
+  .add--reverse .add-image {
+    order: 2;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container,
+  .about-container.reverse {
+    flex-direction: column;
+    text-align: left;
+  }
+  .about-img { min-height: 300px; }
+}
