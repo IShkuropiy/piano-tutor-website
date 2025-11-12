@@ -8,23 +8,23 @@ import brain from "/src/assets/brain.png";
 import music from "/src/assets/music.png";
 
 export default function Home() {
-    return (
-        <main>
-            <section className="hero">
-                <div className="hero-content">
-                    <h1 className="title">Individual Piano Lessons: Personalized Learning. Real Results.</h1>
-                    <p className="text">
-                        Whether you're starting from scratch or looking to revisit the skills you mastered in music school, private piano lessons are the perfect place to begin (or continue!) your musical journey.
-                    </p>
-                    <Link to="/about" className="btn">Learn more</Link>
-                </div>
+  return (
+    <main>
+      <section className="hero">
+        <div className="hero-content">
+          <h1 className="title">Individual Piano Lessons: Personalized Learning. Real Results.</h1>
+          <p className="text">
+            Whether you're starting from scratch or looking to revisit the skills you mastered in music school, private piano lessons are the perfect place to begin (or continue!) your musical journey.
+          </p>
+          <Link to="/about" className="btn">Learn more</Link>
+        </div>
 
-                <div className="image">
-                    <img src={hero} />
-                </div>
-            </section>
+        <div className="image">
+          <img src={hero} />
+        </div>
+      </section>
 
-            <section className="footer">
+      <section className="footer">
         <div className="footer-container">
           <h1>So many reasons to start</h1>
           <div className="card-grid">
@@ -52,6 +52,33 @@ export default function Home() {
         </div>
 
       </section>
-        </main>
-    );
+
+      <section className="add">
+        <div className="add-image">
+          <img src={kid} />
+        </div>
+        <div className="add-content">
+          <h1 className="add-title">Being a Pianist Is an Honor</h1>
+
+          <p className="add-text">
+            To be a pianist is more than simply pressing keys — it is a privilege, a discipline, and a journey of personal growth. Every time you sit at the instrument, you are not only making music, you are also developing qualities that will serve you far beyond the piano bench:
+          </p>
+          <ul className="add-list">
+            <li>Physical endurance and stamina</li>
+            <li>Mental flexibility and sharp focus</li>
+            <li>Persistence in the face of challenges</li>
+            <li>Discipline and self-control</li>
+            <li>Composure under pressure</li>
+            <li>A long attention span and strong concentration</li>
+            <li>Coordination between mind, body, and ear</li>
+            <li>The ability to overcome obstacles</li>
+            <li>Quick reactions and adaptability</li>
+            <li>Excellent memory</li>
+            <li>The capacity to manage an intensive workload</li>
+            <li>A rich and imaginative inner world</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  );
 }
