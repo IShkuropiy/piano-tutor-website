@@ -18,9 +18,8 @@ export default function About() {
           src={piano} />
         <div className="hero__overlay" />
         <div className="hero__content container">
-          <h3 className="about-sub">Carrying the legacy of European classical school into the vision of today
-          </h3>
-          <h1></h1>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, saepe.</h3>
+          <h1>Lorem5</h1>
         </div>
       </section>
 
