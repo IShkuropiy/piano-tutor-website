@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
+/*import Layout from './components/Layout';*/
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Hero/Home';
 import About from './pages/About';
@@ -20,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
+       <Footer />
     </BrowserRouter>
   )
 }
