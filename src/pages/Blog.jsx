@@ -1,114 +1,84 @@
 import { Link } from "react-router-dom";
 import "./Blog.css";
+import classicalmusic from "/src/assets/classicalmusic.png";
+import musics from "/src/assets/musics.png";
+import pianist from "/src/assets/pianist.png";
+import boy from "/src/assets/boy.jpg";
 
 export default function Blog() {
+
     return (
-        <section id="blog" className="blog">
-        <div className="container">
-          <h2 className="section-title">Featured articles</h2>
-
-          <div className="card-grid">
-
-            <article className="card">
-              <span className="eyebrow">Independent Practice</span>
-              <h3 className="card-title">Independent Practice At Home</h3>
-              <p className="card-snippet">
-                Daily practice is essential. Without it, progress will be slow or may not come at all...
-              </p>
-              <div className="card-meta">
-                <Link to="/blog/article1" className="card-link">Read more</Link>
-              </div>
-            </article>
-
-            <article className="card">
-              <span className="eyebrow">Student's Tips</span>
-              <h3 className="card-title">Motivation</h3>
-              <p className="card-snippet">
-                t’s not motivation that drives action, but action that drives motivation...
-              </p>
-              <div className="card-meta">
-                <a href="#read-3" className="card-link">Read more</a>
-              </div>
-            </article>
-
-              <article className="card">
-              <span className="eyebrow">Inspire And Achieve</span>
-              <h3 className="card-title">The Psychological Benefits of Piano Playing</h3>
-              <p className="card-snippet">
-                Playing the piano is not only an artistic pursuit—it is also a powerful tool for mental well-being...
-              </p>
-              <div className="card-meta">
-                <Link to="/blog/article3" className="card-link">Read more</Link>
-              </div>
-            </article>
-
-             <article className="card">
-              <span className="eyebrow">Independent Practice</span>
-              <h3 className="card-title">Effective Strategies for Practicing Music</h3>
-              <p className="card-snippet">
-               Practice Slowly and Deliberately...
-              </p>
-              <div className="card-meta">
-                <Link to="/blog/article4" className="card-link">Read more</Link>
-              </div>
-            </article>
-
-              <article className="card">
-              <span className="eyebrow">Your Technique</span>
-              <h3 className="card-title">Effective Strategies for Practicing Music</h3>
-              <p className="card-snippet">
-                Practice Slowly and Deliberately...
-              </p>
-              <div className="card-meta">
-                <a href="#practice2" className="card-link">Read more</a>
-              </div>
-            </article>
-
-            <article className="card">
-              <span className="eyebrow">Inspire And Achieve</span>
-              <h3 className="card-title">The Art of Stumbling Forward</h3>
-              <p className="card-snippet">
-                Playing the piano is unlike almost anything most students have ever done. In the beginning, every new pianist struggles
-              </p>
-              <div className="card-meta">
-                <Link to="/blog/article6" className="card-link">Read more</Link>
-              </div>
-            </article>
-
-            <article className="card">
-              <span className="eyebrow">Student's Tips</span>
-              <h3 className="card-title">Motivation</h3>
-              <p className="card-snippet">
-                t’s not motivation that drives action, but action that drives motivation...
-              </p>
-              <div className="card-meta">
-                <a href="#read-3" className="card-link">Read more</a>
-              </div>
-            </article>
-
-            <article className="card">
-              <span className="eyebrow">Music Theory</span>
-              <h3 className="card-title">Tempo</h3>
-              <p className="card-snippet">
-                Tempo is one of the ways musicians bring music to life. Along with rhythm, melody, and harmony, it helps us feel the mood and energy of a piece...
-              </p>
-              <div className="card-meta">
-                <Link to="/blog/article8" className="card-link">Read more</Link>
-              </div>
-            </article>
-
-            <article className="card">
-              <span className="eyebrow">Inspire And Achieve</span>
-              <h3 className="card-title">Being a Pianist Is an Honor</h3>
-              <p className="card-snippet">
-               To be a pianist is more than simply pressing keys—it is a privilege, a discipline, and a journey of personal growth.
-              </p>
-              <div className="card-meta">
-                <Link to="/blog/article9" className="card-link">Read more</Link>
-              </div>
-            </article>
+       <main className="blog">
+      <section className="hero">
+        <img className="hero__img"
+          src={boy} />
+        <div className="hero__overlay" />
+        <div className="hero__content">
+          <h1>Your Path to Piano Mastery starts here </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique autem maxime delectus temporibus! Ut ratione ducimus, a voluptate vel beatae sed ea consectetur officia rem.</p>
+          <div className="hero__cta">
+            <Link to="/sheets" className="btn">Read more</Link>
           </div>
         </div>
       </section>
-    )
-}
+
+      <section className="blog-section">
+
+        <div className="blog-inner">
+          <h1 className="blog-title">Go beyond the classroom with these curated resources. Dive deeper into topics, practice with new sheet music, and continue your educational journey at your own pace.
+        </h1>
+        <p className="blog-intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab animi fuga fugit nemo nesciunt reiciendis tempore est repellat accusantium quam.</p>
+
+        <div className="blog-grid">
+
+          <article className="blog-card">
+              <Link to="/articles/theory/theory" className="b-eyebrow">Music Theory</Link>
+             <Link to="/articles/theory/theory"  className="card-title">
+              Your source for foundational music theory articles.</Link>
+              <Link to="/theory" className="blog-btn">Read more</Link>
+
+            <div className="blog-icon">
+              <img src={classicalmusic} />
+            </div>
+          </article>
+
+           <article className="blog-card">
+              <Link to="/articles/theory/practice" className="b-eyebrow">Independent Practice</Link>
+              <Link to="/articles/theory/practice"  className="card-title">
+                Practical strategies and tips for parents to structure successful, positive piano sessions with their young musician</Link>
+              <Link to="/practice" className="blog-btn">Read more</Link>
+
+            <div className="blog-icon">
+              <img src={musics} />
+            </div>
+          </article>
+
+           <article className="blog-card">
+              <Link to="/articles/theory/inspire" className="b-eyebrow">Inspire & Archive</Link>
+              <Link to="/articles/theory/inspire"  className="card-title">
+                Essential guides for parents and students on creating a positive and effective home piano routine.</Link>
+              <Link to="/inspire" className="blog-btn">Read more</Link>
+
+            <div className="blog-icon">
+              <img src={pianist} />
+            </div>
+          </article>
+
+           <article className="blog-card">
+              <Link to="/articles/theory/theory" className="b-eyebrow">Music Theory</Link>
+              <Link to="/articles/theory/theory" className="card-title">
+                The Architecture of Sound. </Link>
+              <Link to="/theory" className="blog-btn">Read more</Link>
+
+            <div className="blog-icon">
+              <img src={classicalmusic} />
+            </div>
+          </article>
+
+        </div>
+        </div>
+        
+      </section>
+    </main>
+    );
+  }
