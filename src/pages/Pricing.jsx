@@ -26,12 +26,12 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* CARDS */}
+      {/* PRICE CARDS */}
       <section id="plans" className="cards">
         <div className="container cards__grid">
           <article className="card">
             <h3>Single Class</h3>
-            <p className="price">$30<span>/45-min</span></p>
+            <p className="price">$30<span>/45-min/1 time per week</span></p>
             <p>Perfect for new students or those wanting to try a single class.</p>
             <ul>
               <li>Individual 1:1 session</li>
@@ -43,7 +43,7 @@ export default function Pricing() {
 
           <article className="card">
             <h3>Weekly Plan</h3>
-            <p className="price">$25<span>/</span></p>
+            <p className="price">$25<span>/45-min/2+ per week</span></p>
             <p> Best for steady, long-term progress.</p>
             <ul>
               <li>Priority scheduling</li>
@@ -56,7 +56,6 @@ export default function Pricing() {
             <p className="price">Let’s talk</p>
             <p> For advanced needs or special projects.</p>
             <ul>
-              <li>Exam / audition preparation</li>
               <li>Consultation</li>
               <li>Sibling or family packages</li>
             </ul>
@@ -65,8 +64,51 @@ export default function Pricing() {
         </div>
       </section>
 
+
+      {/* POLICY CARDS */}
+      <section className="payment-content">
+        <div className="pricing-inner">
+          <h2 className="lead">
+            Lesson Cancellation and Booking Policy
+          </h2>
+
+          <div className="policy-grid-container">
+
+            {/* Card 1: */}
+            <article className="policy-card">
+              <h3>Cancellation and Rescheduling</h3>
+              <p className="card-subtitle">If you must cancel or rebook your scheduled lesson, I respectfully request a minimum of <strong>24 hours notice.</strong></p>
+              <Link to="/theory" className="blog-btn">Read more</Link>
+            </article>
+
+            {/* Card 2: */}
+            <article className="policy-card">
+              <h3>Payment and Booking</h3>
+              <p className="card-subtitle">All lessons must be paid for in full prior to being confirmed and officially booked.</p>
+              <Link to="/theory" className="blog-btn">Read more</Link>
+            </article>
+
+            {/* Card 3: */}
+
+            <article className="policy-card">
+              <h3>Accepted Payment Methods</h3>
+              <p className="card-subtitle">I accept:</p>
+              <Link to="/theory" className="blog-btn">Read more</Link>
+            </article>
+
+            {/* Card 4: */}
+            <article className="policy-card">
+              <h3>Payment Schedule Options</h3>
+              <p className="card-subtitle">I offer flexible options to accommodate your needs:</p>
+              <Link to="/theory" className="blog-btn">Read more</Link>
+            </article>
+          </div>
+        </div>
+
+      </section>
+
       <section className="dark-footer">
-        <div className="dark-footer-container">
+        <div className="dark-container">
           <h1>Personalized piano lessons for every age, every stage</h1>
           <div className="dark-card-grid">
             <div className="dark-footer-card">
