@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Pricing.css";
-import student from "/src/assets/student.jpg";
-import grand from "/src/assets/grand.png";
-import inspiration from "/src/assets/inspiration.png";
-import clock from "/src/assets/clock.png";
+import "./Hero/Hero.css";
+import "./FourCardsGrid.css";
+import Getstarted from '../components/reasons/Getstarted';
+import Lessons from '../components/reasons/Lessons';
+import hands6 from "/src/assets/hands6.jpg";
+
 
 export default function Pricing() {
 
@@ -14,15 +16,12 @@ export default function Pricing() {
       {/* HERO */}
       <section className="hero">
         <img className="hero__img"
-          src={student} />
+          src={hands6} />
         <div className="hero__overlay" />
-        <div className="hero__content container">
+        <div className="hero__content">
           <h1>Lesson rates</h1>
-          <p>I believe that high-quality, personalized tutoring shouldn’t be a luxury. Every child deserves the chance to develop their skills and confidence through consistent, encouraging lessons.
+          <p className="hero__text">I believe that high-quality, personalized tutoring shouldn’t be a luxury. Every child deserves the chance to develop their skills and confidence through consistent, encouraging lessons.
             To make this possible, I’ve kept my pricing as affordable as I can. Your commitment to regular sessions helps me maintain this low-cost structure while continuing to provide exceptional results.</p>
-          <div className="hero__cta">
-            <Link to="/contact" className="btn">Book a lesson</Link>
-          </div>
         </div>
       </section>
 
@@ -64,79 +63,79 @@ export default function Pricing() {
         </div>
       </section>
 
+      <hr />
 
-      {/* POLICY CARDS */}
-      <section className="payment-content">
-        <div className="pricing-inner">
-          <h2 className="lead">
-            Lesson Cancellation and Booking Policy
-          </h2>
+      < Lessons />
 
-          <div className="policy-grid-container">
+      <hr />
 
-            {/* Card 1: */}
-            <article className="policy-card">
-              <h3>Cancellation and Rescheduling</h3>
-              <p className="card-subtitle">If you must cancel or rebook your scheduled lesson, I respectfully request a minimum of <strong>24 hours notice.</strong></p>
-              <Link to="/theory" className="blog-btn">Read more</Link>
+      {/* FOUR-CARD GRID */}
+      <section className="servicee">
+        <div className="servicee-container">
+          <h1 className="servicee__title">
+            Lesson Cancellation & Booking Policy
+          </h1>
+
+          <div className="servicee__grid">
+
+            <article className="servicee-card">
+              <ul>
+                <li>
+                  <strong>24+ Hours Notice: </strong>
+                  If you cancel or reschedule more than 24 hours before your scheduled time, there will be no charge.
+                </li>
+                <li>
+                  <strong>Less than 24 Hours Notice: </strong>
+                  Cancellations or requests to reschedule made with less than 24 hours notice will result in a charge of 50% of the lesson service amount.
+                </li>
+                <li>
+                  <strong>No-Shows: </strong>
+                  Failure to show up for a lesson without any prior notice will be considered a "No-Show" and will result in a charge of 100% of the lesson service amount.
+                </li>
+              </ul>
             </article>
 
-            {/* Card 2: */}
-            <article className="policy-card">
-              <h3>Payment and Booking</h3>
-              <p className="card-subtitle">All lessons must be paid for in full prior to being confirmed and officially booked.</p>
-              <Link to="/theory" className="blog-btn">Read more</Link>
+            <article className="servicee-card">
+              <ul>
+                <li>
+                  <strong>Booking Requirement: </strong> Lessons are only confirmed and booked once payment has been successfully processed.
+                </li>
+                <li><strong>Payment Deadline: </strong>Failure to pay for a lesson at least 24 hours prior to the scheduled start time will result in the lesson being automatically un-booked and offered to another student.
+                </li>
+              </ul>
             </article>
 
-            {/* Card 3: */}
+            <article className="servicee-card">
+              <p className="accept">I accept: </p>
+              <ul>
+                <li>
+                  <strong> Venmo, PayPal, Zelle. </strong>
+                </li>
+                <li>
+                  <strong>Cash:</strong> If you prefer to pay with cash, please notify me via text or email before your scheduled lesson so we can make the necessary arrangements.
+                </li>
+              </ul>
 
-            <article className="policy-card">
-              <h3>Accepted Payment Methods</h3>
-              <p className="card-subtitle">I accept:</p>
-              <Link to="/theory" className="blog-btn">Read more</Link>
             </article>
 
-            {/* Card 4: */}
-            <article className="policy-card">
-              <h3>Payment Schedule Options</h3>
-              <p className="card-subtitle">I offer flexible options to accommodate your needs:</p>
-              <Link to="/theory" className="blog-btn">Read more</Link>
+            <article className="servicee-card">
+              <ul>
+                <li>
+                  <strong>Monthly Payment (Preferred): </strong> For consistent scheduling and commitment, I highly prefer payment for a full month of lessons in advance.
+                </li>
+                <li>
+                  <strong>Per Lesson Payment: </strong> I understand that flexibility is key, especially when you are starting out. You may opt to pay per lesson if you wnat to take a trial lesson or if you have special circumstances. Please discuss this option with me directly if you have unique scheduling needs.
+                </li>
+              </ul>
             </article>
           </div>
-        </div>
 
+        </div>
       </section>
 
-      <section className="dark-footer">
-        <div className="dark-container">
-          <h1>Personalized piano lessons for every age, every stage</h1>
-          <div className="dark-card-grid">
-            <div className="dark-footer-card">
-              <img className="icon"
-                src={clock} />
-                <h3>Flexible</h3>
-              <p>
-               Enjoy the convenience of a flexible lesson schedule designed to fit your busy life.
-              </p>
-            </div>
-            <div className="dark-footer-card">
-              <img className="icon"
-                src={inspiration} />
-                <h3>Personalized</h3>
-              <p>Each lesson program is adapted and tailored specifically to the individual student's goals and needs.</p>
-              </div>
-            <div className="dark-footer-card">
-              <img className="icon"
-                src={grand} />
-                <h3>Comprehensive</h3>
-              <p>
-                Comprehensive training for all skill levels: engaging lessons for beginners and advanced instruction for experienced musicians.
-              </p>
-            </div>
-          </div>
-        </div>
+      <hr />
+      <Getstarted />
 
-      </section>
     </main>
   );
 }
