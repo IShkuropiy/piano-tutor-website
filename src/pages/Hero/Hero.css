@@ -1,0 +1,123 @@
+/* ---------------- HERO ---------------- */
+.hero-contact {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+  isolation: isolate;   
+}
+
+.hero {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: clamp(420px, 65vh, 620px);
+  isolation: isolate;   
+}
+
+.hero__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*z-index: -2;*/
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+  linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.35) 45%, rgba(0,0,0,0) 100%);
+  /*z-index: -1;*/
+}
+
+.hero__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;    
+  margin-left: clamp(20px, 6vw, 120px);
+  margin-right: auto;     
+  padding-block: 120px 80px;
+  color: #fff;
+  gap: 24px;
+  text-shadow: 0 2px 12px rgba(0,0,0,.45);
+}
+
+.hero h1 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.15;
+  margin: 0;
+}
+
+.hero__text {
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: .8rem 1.2rem;
+  border-radius: 8px;
+  background: #2c7be5;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.04);
+  filter: brightness(1.1);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.hero__cta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.bm-hero__cta-text {
+  white-space: nowrap;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 900px) {
+
+  .hero__content {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+ .hero__content h1 {
+    font-size: clamp(26px, 7vw, 34px);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+.hero__content p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .hero__content .btn {
+    margin: 20px auto 0 auto;
+    text-align: center;
+  }
+}
