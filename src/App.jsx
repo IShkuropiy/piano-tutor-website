@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom';
 /*import Layout from './components/Layout';*/
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Hero/Home';
-import About from './pages/About';
 import Pricing from './pages/Pricing';
 import Sheets from './pages/Sheets';
 import Contact from './pages/Contact';
@@ -17,7 +16,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/sheets" element={<Sheets />} />
         <Route path="/contact" element={<Contact />} />
