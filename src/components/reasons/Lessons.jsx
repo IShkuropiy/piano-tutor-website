@@ -1,5 +1,5 @@
 import React from "react";
-import piano2 from "/src/assets/piano2.png";
+import piano from "/src/assets/piano.png";
 import pianokeys from "/src/assets/pianokeys.png";
 import musicnotes from "/src/assets/musicnotes.png";
 import "./Index.css";
@@ -31,7 +31,7 @@ export default function Lessons() {
                             
                             <div className="benefits-card">
                                 <img className="icon"
-                                    src={piano2} />
+                                    src={piano} />
                                 <h3 className="benefits-sub">Comprehensive</h3>
                                 <p className="b-text">
                                     Comprehensive training for all skill levels: engaging lessons for beginners and advanced instruction for experienced musicians.

@@ -12,7 +12,7 @@ import kid4 from "/src/assets/kid4.jpg";
 import kid6 from "/src/assets/kid6.jpg";
 import kid7 from "/src/assets/kid7.jpg";
 import royal4 from "/src/assets/royal4.jpg";
-import pianistbrain from "/src/assets/pianistbrain.png";
+import brain from "/src/assets/brain.png";
 import scheharazade from "../assets/scheharazade.png";
 import peergynt from "../assets/peergynt.png";
 import saintsaens14 from "../assets/saintsaens14.png";
@@ -124,7 +124,7 @@ export default function Blog() {
 
           <article className="blog-card">
             <div className="card-img">
-              <img src={pianistbrain} />
+              <img src={brain} />
             </div>
             <div className="card-body">
               <p className="blog-eyebrow">Inspire & Archive</p>
