@@ -1,57 +1,96 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import hero from "/src/assets/hero.jpg";
-import kid from "/src/assets/kid.jpg";
-import reading from "/src/assets/reading.png";
-import brain from "/src/assets/brain.png";
-import music from "/src/assets/music.png";
 
 export default function Home() {
   return (
-    <main>
+     <main className="home">
+      {/* HERO */}
       <section className="hero">
-        <div className="hero-content">
-          <h1 className="title">Individual Piano Lessons: Personalized Learning. Real Results.</h1>
-          <p className="text">
+        <img src={hands16} className="hero__img" />
+        <div className="hero__overlay" />
+        <div className="hero__content">
+          <h1>
+            Individual Piano Lessons. Personalized Learning. Real Results.
+          </h1>
+          <p className="hero__text">
             Whether you're starting from scratch or looking to revisit the skills you mastered in music school, private piano lessons are the perfect place to begin (or continue!) your musical journey.
           </p>
-          <Link to="/about" className="btn">Learn more</Link>
-        </div>
 
-        <div className="image">
-          <img src={hero} />
+          <div className="hero__cta">
+            <Link to="/Pricing" className="btn">Learn more</Link>
+          </div>
         </div>
       </section>
 
-      <section className="footer">
-        <div className="footer-container">
-          <h1>So many reasons to start</h1>
-          <div className="card-grid">
-            <div className="footer-card">
-              <img className="icon"
-                src={reading} />
-              <p><strong>Expand Your Cultural Knowledge</strong></p>
-              <p>Playing the piano is a wonderful way to improve your cultural knowledge by exploring diverse music styles and the works of various composers across history. It will immensely open your mind and deepen your appreciation for all forms of art.</p>
-            </div>
-            <div className="footer-card">
-              <img className="icon"
-                src={music} />
-              <p><strong>Keys to Self-Expression</strong></p>
-              <p>The piano is a powerful, non-verbal medium for self-expression, enabling individuals to convey a vast spectrum of emotions through music.</p>
-            </div>
-            <div className="footer-card">
-              <img className="icon"
-                src={brain} />
-              <p><strong>Boost Your Cognitive Functions</strong></p>
-              <p>
-                Playing the piano enhances brain connectivity, improves focus, problem-solving, and fine motor skills by engaging both brain hemispheres, which can delay cognitive decline and boost academic and professional performance.
+      <Benefits />
+
+      <hr /> 
+
+      {/* ABOUT */}
+      <section className="about">
+        <div className="about-inner">
+          <img className="avatar" src={self} />
+
+          <div className="about-content">
+            <p className="about-text">
+              With a Bachelor's degree in Performing Arts, I possess a strong foundation built upon 12 years of academic study, specializing in classical music. My 10 years of professional experience spans diverse international environments, including Ukraine, China, and the United States, where I have taught students ranging from 5 to 25 years old. I focus on providing a comprehensive and strong classical foundation; this rigorous base ensures that whether students pursue music professionally or explore other genres, they are always equipped with superior technique, theory, and discipline. This global experience allows me to connect with and adapt my teaching methods to students of all backgrounds and skill levels.
+            </p>
+
+            <p className="name">Iryna Shkuropii</p>
+            <p className="role">Classical Piano Tutor</p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      {/* FOUR-CARD GRID */}
+      <section className="servicee">
+        <div className="servicee-container">
+          <h1 className="servicee__title">
+            Musical Guidance & Services
+          </h1>
+
+          <div className="servicee__grid">
+
+            <article className="servicee-card">
+              <img className="servicee__icon"
+                src={teacher} />
+              <h3>Individual Lessons</h3>
+              <p>Available in person or online. Each session includes instruction in piano playing and music reading.</p>
+              <p>I am happy to travel to your location to conduct the lesson in the comfort of your home. $5 travel fee will be added to the standard lesson price to cover travel expenses.</p>
+            </article>
+
+            <article className="servicee-card">
+              <img className="servicee__icon"
+                src={clas} />
+              <h3>Musical Development</h3>
+              <p>Lessons focus on refining technique, expressiveness, musical memory, coordination, and aural perception — helping you perform with confidence and ease.</p>
+            </article>
+
+            <article className="servicee-card">
+             <img className="servicee__icon"
+              src={education} />
+              <h3>Music Theory & Advanced Studies</h3>
+              <p>I provide focused academic services for students seeking to deepen their knowledge of musical structure and context. Private lessons are available in Music Theory, Harmony, and Music Literature and History.</p>
+            </article>
+
+             <article className="servicee-card">
+             <img className="servicee__icon"
+              src={creativity} />
+              <h3>Additional Services</h3>
+              <p> Personal Consultations: Available on request to discuss progress, answer specific questions, and provide detailed info about .
               </p>
-            </div>
+              <p>
+              Exam Preparation: Focused support is offered for students needing assistance with school examinations or other academic requirements in music.</p>
+              <p>Lessons are available in English, and can also be conducted in Russian or Ukrainian upon request.</p>
+            </article>
           </div>
         </div>
 
       </section>
+
     </main>
   );
 }
