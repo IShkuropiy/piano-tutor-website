@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
+
 export default function Home() {
   return (
      <main className="home">
@@ -64,7 +65,7 @@ export default function Home() {
 
             <article className="servicee-card">
               <img className="servicee__icon"
-                src={clas} />
+                src={class} />
               <h3>Musical Development</h3>
               <p>Lessons focus on refining technique, expressiveness, musical memory, coordination, and aural perception — helping you perform with confidence and ease.</p>
             </article>
