@@ -1,6 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import "./Hero.css";
+import "../FourCardsGrid.css";
+import hands16 from "/src/assets/hands16.jpg";
+import self from "/src/assets/self.jpg";
+import creativity from "/src/assets/creativity.png";
+import education from "/src/assets/education.png";
+import teacher from "/src/assets/teacher.png";
+import class from "/src/assets/class.png";
+import Benefits from '../../components/reasons/Benefits';
 
 
 export default function Home() {
