@@ -1,9 +1,9 @@
 .main-footer {
-    /* Background and text colors */
-    background-color: #222; /* Dark/Black background */
-    color: #ffffff; /* White text */
-    padding: 30px 20px; /* Vertical padding */
-    text-align: center; /* Center everything */
+    background-color: #222; 
+    color: #fff; 
+    padding: 30px 20px;
+    text-align: center; 
+    font-family: 'Inter', sans-serif;
 }
 
 /* NAVIGATION */
@@ -18,36 +18,37 @@
     list-style: none; 
     padding: 0;
     margin: 0;
-    display: flex; /* Arrange links horizontally */
-    justify-content: center; /* Center the links */
-    gap: 30px; /* Space between links */
-    font-family: 'Inter', sans-serif;
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
 }
 
 .footer-nav-links li a {
-    color: #ffffff; /* White link text */
-    text-decoration: none; /* Remove underline */
+    color: #ffffff;
+    text-decoration: none; 
     font-size: 0.85rem;
     font-weight: bold;
-    text-transform: uppercase; /* Match the style in the screenshot */
     letter-spacing: 1px;
 }
 
 .footer-nav-links li a:hover {
-    color: #2c7be5; /* Lighten on hover */
+    text-decoration: underline; 
+}
+
+.footer-nav-links li a:active {
+    color: #2c7be5; 
 }
 
 /* --- MAIN CONTENT STYLING --- */
 
 .footer-content {
-    /* Centered content block */
     max-width: 800px;
     margin: 20px auto;
 }
 
 .loc h3 {
-    font-size: 1.5rem;
-    font-weight: 500; /* Not too bold */
+    font-size: 1rem;
+    font-weight: 300;
     margin: 10px 0 5px 0;
 }
 
@@ -60,26 +61,23 @@
 /* --- CONTACT DETAILS STYLING --- */
 
 .contact-details {
-    display: flex; /* Arrange contact items horizontally */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    display: flex; 
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; /* Space between contact items */
+    gap: 40px; 
     margin-top: 30px;
-    font-family: 'Inter', sans-serif;
 }
 
 .contact-details p {
-    display: flex; /* To align icon and text */
+    display: flex; 
     align-items: center;
-    font-size: 1.1rem;
-    margin: 5px 0;
+    line-height: 1.4;
+    margin: 8px 0  !important;
 }
 
-.contact-details span {
-    /* Styling for the emoji icons */
+.contact-details .footer-icons {
     margin-right: 8px;
     font-size: 1.2rem;
-    color: #e0b35e; /* Use a highlight color if desired, or keep white */
 }
 
 /* --- COPYRIGHT STYLING --- */
@@ -92,5 +90,15 @@
 
 .copyright p {
     font-size: 0.75rem;
-    opacity: 0.7; /* Make the copyright text subtle */
+    opacity: 0.7; 
+}
+
+@media (max-width: 600px) {
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
 }

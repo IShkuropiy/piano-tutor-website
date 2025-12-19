@@ -11,7 +11,6 @@ export default function Footer() {
             <nav className="footer-menu">
                 <ul className="footer-nav-links">
                     <li><NavLink to="/home">HOME</NavLink></li>
-                    <li><NavLink to="/about">ABOUT</NavLink></li>
                     <li><NavLink to="/pricing">PRICING</NavLink></li>
                     <li><NavLink to="/blog">THE BLOG</NavLink></li>
                     <li><NavLink to="/contact">CONTACT</NavLink></li>
@@ -26,17 +25,16 @@ export default function Footer() {
 
                 <div className="contact-details">
                     <p className="email">
-                        <span>📧</span> info@aghgkjh.com
+                        info@aghgkjh.com
                     </p>
                     <p className="phone">
-                        <span>📞</span> (123) 456-7890
+                        (123) 456-7890
                     </p>
                     <p className="address">
-                        <span>🏠</span> North Bethany, Portland, OR
+                        North Bethany, Portland, OR
                     </p>
                 </div>
             </div>
-            {/* Copyright and other footer text */}
             <div className="copyright">
                 <p>© 2025 Your Name. All Rights Reserved. | Iryna Shkuropii</p>
             </div>
