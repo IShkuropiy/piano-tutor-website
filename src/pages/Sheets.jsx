@@ -8,7 +8,7 @@ import kid3 from "/src/assets/kid3.png";
 import keys7 from "/src/assets/keys7.jpg";
 import orchestra from "/src/assets/orchestra.jpg";
 import b11 from "/src/assets/b11.jpg";
-import royal11 from "/src/assets/royal11.png";
+import royal1 from "/src/assets/royal1.png";
 import keys from "/src/assets/keys.jpg";
 import hands21 from "/src/assets/hands21.jpg";
 
@@ -127,7 +127,7 @@ export default function Sheets() {
               </div>
             </div>
             <div className="s-image">
-              <img src={royal11} />
+              <img src={royal1} />
             </div>
           </article>
 

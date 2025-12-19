@@ -2,7 +2,7 @@ import React from "react";
 import musiceducation from "/src/assets/musiceducation.png";
 import musicbook from "/src/assets/musicbook.png";
 import note from "/src/assets/note.png";
-import "./Benefits.css";
+import "./Index.css";
 
 export default function Benefits() {
     return (
