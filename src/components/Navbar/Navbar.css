@@ -1,50 +1,29 @@
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 8%;
-    font-family: "Inter", sans-serif;
-    color: #222;
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    top: 0;
-    z-index: 1000;
+/* TOP */
+.navbar {
+   font-family: "Inter", sans-serif;
+   color: #fff;
 }
 
-.menu .nav-links {
-    list-style: none;
+.nav-top {
     display: flex;
+    justify-content: space-between; 
     align-items: center;
-    gap: 32px;
+    padding: 10px 5%; 
+    background-color: #333; 
 }
 
-.menu .nav-links a {
-    color: #222;
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
     text-decoration: none;
-    padding: 5px 0;
-    font-size: 17px;
-    font-weight: 500;
-    position: relative;
-  transition: color 0.2s ease;
+    color: #fff;
 }
 
-.nav-links a:hover {
-  color: #195cc8;
-}
-
-.nav-links a.active {
-  color: #195cc8;
-  font-weight: 600;
-}
-
-.menu .contact-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    gap: 24px;
-    color: #333;
-    cursor: pointer;
+.contact-info {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9em;
+ cursor: pointer;
 }
 
 .contact-info span {
@@ -52,21 +31,168 @@
   transition: color 0.2s ease;
 }
 
-.lesson-btn {
-  border: 2px solid #195cc8;
-  background-color: #195cc8;
-  color: #fff;
-  border-radius: 25px;
-  padding: 10px 22px;
+/* BOTTOM */
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 12px 8%; /* 10px 0 for thiner */
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+}
+
+.menu .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu .nav-links a {
+    color: #222;
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 17px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #444;
+}
+
+.nav-links a.active {
+  color: #2c7be5;
   font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-.lesson-btn:hover {
-  background-color: #fff;
-  color: #195cc8;
-  border-color: #195cc8;
+.nav-btn .mobile-btn .mobile-btn  {
+  display: inline-block;
+  padding: .8rem 1.2rem;
+  border-radius: 8px;
+  background: #2c7be5;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Hamburger button */
+.nav-toggle {
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #fff;
 }
 
 
+/* MOBILE MENU OVERLAY */
+.mobile-menu {
+  font-family: 'Inter', sans-serif;
+  position: fixed;
+  inset: 0;
+  background: #222;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.nav-left {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.mobile-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-links a:hover {
+  text-decoration: underline;
+}
+
+.mobile-links a.active {
+  color: #2c7be5;
+  font-weight: 600;
+}
+
+.mobile-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: .8rem 1.2rem;
+  border-radius: 8px;
+  background: #2c7be5;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* VISIBILITY CONTROL */
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-top {
+    background-color: #222;
+    flex-direction: column;
+    align-items: flex-stacenterrt;
+    padding: 16px 20px;
+    gap: 10px;
+  }
+
+  .nav-top-left {
+    font-size: 18px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .nav-toggle {
+    display: block;
+    align-self: center;
+    margin-top: 8px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-top-right {
+    display: none;
+  }
+}
