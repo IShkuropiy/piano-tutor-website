@@ -1,5 +1,4 @@
 import React from "react";
-import Youtube from 'react-lite-youtube-embed';
 import './Index.css'
 import self from "../../assets/self.jpg";
 import ibsen from "../../assets/ibsen.png";
