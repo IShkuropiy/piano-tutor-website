@@ -8,7 +8,7 @@ import self from "/src/assets/self.jpg";
 import creativity from "/src/assets/creativity.png";
 import education from "/src/assets/education.png";
 import teacher from "/src/assets/teacher.png";
-import class from "/src/assets/class.png";
+import c from "/src/assets/c.png";
 import Benefits from '../../components/reasons/Benefits';
 
 
@@ -74,7 +74,7 @@ export default function Home() {
 
             <article className="servicee-card">
               <img className="servicee__icon"
-                src={class} />
+                src={c} />
               <h3>Musical Development</h3>
               <p>Lessons focus on refining technique, expressiveness, musical memory, coordination, and aural perception — helping you perform with confidence and ease.</p>
             </article>
