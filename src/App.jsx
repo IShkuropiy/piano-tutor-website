@@ -15,6 +15,11 @@ import SaintSaens from "./components/additional/SaintSaens";
 import Erlkönig from "./components/additional/Erlkönig";
 import TarasBulba from "./components/additional/TarasBulba";
 import Turina from "./components/additional/Turina";
+import Article6 from "./components/articles/Article6";
+import Article7 from "./components/articles/Article7";
+import Article8 from "./components/articles/Article8";
+import Article9 from "./components/articles/Article9";
+
 import Article1 from "./components/articles/Article1";
 import Article2 from "./components/articles/Article2";
 import Article3 from "./components/articles/Article3";
@@ -39,6 +44,10 @@ function App() {
         <Route path="/additional/Erlkönig" element={<Erlkönig />} />
         <Route path="/additional/TarasBulba" element={<TarasBulba />} />
         <Route path="/additional/Turina" element={<Turina />} />
+        <Route path="/blog/article6" element={<Article6 />} />
+        <Route path="/blog/article7" element={<Article7 />} />
+        <Route path="/blog/article8" element={<Article8 />} />
+        <Route path="/blog/article9" element={<Article9 />} />
         <Route path="/blog/article1" element={<Article1 />} />
         <Route path="/blog/article2" element={<Article2 />} />
         <Route path="/blog/article3" element={<Article3 />} />
