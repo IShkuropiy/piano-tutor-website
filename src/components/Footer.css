@@ -66,6 +66,7 @@
     justify-content: center;
     gap: 40px; 
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .contact-details p {
@@ -78,6 +79,10 @@
 .contact-details .footer-icons {
     margin-right: 8px;
     font-size: 1.2rem;
+}
+
+.contact-details p:hover {
+    text-decoration: underline;
 }
 
 /* --- COPYRIGHT STYLING --- */
