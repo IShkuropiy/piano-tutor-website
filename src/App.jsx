@@ -25,6 +25,9 @@ import Article7 from "./components/articles/Article7";
 import Article8 from "./components/articles/Article8";
 import Article9 from "./components/articles/Article9";
 
+import Article10 from "./components/articles/Article10";
+import Article11 from "./components/articles/Article11";
+import Article12 from "./components/articles/Article12";
 
 function App() {
 
@@ -53,9 +56,9 @@ function App() {
         <Route path="/blog/article3" element={<Article3 />} />
         <Route path="/blog/article4" element={<Article4 />} />
         <Route path="/blog/article5" element={<Article5 />} />
-        <Route path="/blog/article10" element={<Article10 />} />
-        <Route path="/blog/article11" element={<Article11 />} />
-        <Route path="/blog/article12" element={<Article12 />} />
+        import Article10 from "./components/articles/Article10";
+import Article11 from "./components/articles/Article11";
+import Article12 from "./components/articles/Article12";
       </Routes>
 
        <Footer />
