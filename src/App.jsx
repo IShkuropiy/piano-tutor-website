@@ -15,16 +15,16 @@ import SaintSaens from "./components/additional/SaintSaens";
 import Erlkönig from "./components/additional/Erlkönig";
 import TarasBulba from "./components/additional/TarasBulba";
 import Turina from "./components/additional/Turina";
-import Article6 from "./components/articles/Article6";
-import Article7 from "./components/articles/Article7";
-import Article8 from "./components/articles/Article8";
-import Article9 from "./components/articles/Article9";
-
 import Article1 from "./components/articles/Article1";
 import Article2 from "./components/articles/Article2";
 import Article3 from "./components/articles/Article3";
 import Article4 from "./components/articles/Article4";
 import Article5 from "./components/articles/Article5";
+import Article6 from "./components/articles/Article6";
+import Article7 from "./components/articles/Article7";
+import Article8 from "./components/articles/Article8";
+import Article9 from "./components/articles/Article9";
+
 import Article10 from "./components/articles/Article10";
 import Article11 from "./components/articles/Article11";
 import Article12 from "./components/articles/Article12";
