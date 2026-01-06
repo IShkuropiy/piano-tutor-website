@@ -24,7 +24,6 @@ import Article6 from "./components/articles/Article6";
 import Article7 from "./components/articles/Article7";
 import Article8 from "./components/articles/Article8";
 import Article9 from "./components/articles/Article9";
-
 import Article10 from "./components/articles/Article10";
 import Article11 from "./components/articles/Article11";
 import Article12 from "./components/articles/Article12";
